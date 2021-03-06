@@ -19,4 +19,9 @@ public class PlaceCubeCommand : ICommand
         CubePlacer.PlaceCube(posn, color, cube);
         //throw new System.NotImplementedException();
     }
+
+    public void Undo()
+    {
+        CubePlacer.RemoveCube(posn, color);
+    }
 }

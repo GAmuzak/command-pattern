@@ -8,13 +8,7 @@ public class PlayerMovement : MonoBehaviour
     private CharacterController controller;
     [SerializeField]
     private float speed = 10f;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
-    // Update is called once per frame
     void Update()
     {
         float x = Input.GetAxis("Horizontal");
